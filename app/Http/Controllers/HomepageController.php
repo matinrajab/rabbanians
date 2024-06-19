@@ -21,7 +21,8 @@ class HomepageController extends Controller
         $missions = Mission::all();
         $openVolunteers = OpenVolunteer::orderByDesc('id')->limit(3)->get();
         $events = Event::orderByDesc('id')->limit(3)->get();
+        $blogs = Blog::orderByDesc('id')->limit(3)->get();
         $testimonials = Testimonial::orderByDesc('id')->get();
-        return view('user.home.index', compact('banner', 'home', 'missions', 'openVolunteers', 'events', 'testimonials'));
+        return view('user.home.index', compact('banner', 'home', 'missions', 'openVolunteers', 'events', 'blogs', 'testimonials'));
     }
 }
