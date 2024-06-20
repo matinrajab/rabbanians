@@ -10,13 +10,6 @@ use Illuminate\Http\Request;
 
 class AdminContactController extends Controller
 {
-    private $fileService;
-
-    public function __construct(FileService $fileService)
-    {
-        $this->fileService = $fileService;
-    }
-
     public function show()
     {
         $contact = ContactUs::first();

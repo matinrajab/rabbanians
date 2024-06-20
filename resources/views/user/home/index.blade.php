@@ -41,9 +41,6 @@
                         </svg>
                         <div class="main-slider-one__shape-one"><img
                                 src="{{ asset('user/assets') }}/images/shapes/slider-1-shape-1.png" alt="careox"></div>
-                        <div class="main-slider-one__shape-two"><img
-                                src="{{ asset('user/assets') }}/images/shapes/slider-1-shape-2-rtl.png" alt="careox">
-                        </div>
                         <div class="main-slider-one__shape-three"><img
                                 src="{{ asset('user/assets') }}/images/shapes/slider-1-shape-3.png" alt="careox"></div>
                         <div class="main-slider-one__shape-four"><img
@@ -59,9 +56,9 @@
                                 <div class="col-md-7">
                                     <div class="main-slider-one__content">
                                         <div class="main-slider-one__image">
-                                            <img src="{{ asset('user/assets') }}/images/shapes/slider-1-arrow-rtl.png"
-                                                alt="careox">
                                             <img src="{{ asset('user/assets') }}/images/shapes/slider-1-hand.png"
+                                                alt="careox">
+                                            <img src="{{ asset('user/assets') }}/images/shapes/slider-1-arrow-rtl.png"
                                                 alt="careox">
                                         </div>
                                         <!-- slider-sub-title -->
@@ -205,7 +202,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="00ms">
                     <div class="service-one__item text-center" style="--accent-color: #ffa415;">
                         <div class="service-one__item__icon">
-                            <span class="icon-generous"></span>
+                            <span class="icon-learning"></span>
                         </div><!-- /.service-icon -->
                         <h3 class="service-one__item__title">Pendidikan</h3><!-- /.service-title -->
                         <p class="service-one__item__text">
@@ -217,7 +214,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                     <div class="service-one__item text-center" style="--accent-color: #ff5528;">
                         <div class="service-one__item__icon">
-                            <span class="icon-zakat"></span>
+                            <span class="icon-multiple-users-silhouette"></span>
                         </div><!-- /.service-icon -->
                         <h3 class="service-one__item__title">Kesehatan</h3><!-- /.service-title -->
                         <p class="service-one__item__text">
@@ -229,7 +226,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                     <div class="service-one__item text-center" style="--accent-color: #8139e7;">
                         <div class="service-one__item__icon">
-                            <span class="icon-zakat-two"></span>
+                            <span class="icon-charity-three"></span>
                         </div><!-- /.service-icon -->
                         <h3 class="service-one__item__title">Lingkungan</h3><!-- /.service-title -->
                         <p class="service-one__item__text">
@@ -241,7 +238,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                     <div class="service-one__item text-center" style="--accent-color: #44c895;">
                         <div class="service-one__item__icon">
-                            <span class="icon-charity-three"></span>
+                            <span class="icon-zakat"></span>
                         </div><!-- /.service-icon -->
                         <h3 class="service-one__item__title">Ekonomi Wisata</h3><!-- /.service-title -->
                         <p class="service-one__item__text">
@@ -336,18 +333,21 @@
             <div class="sec-title text-center">
                 <h3 class="sec-title__title bw-split-in-left">Program Unggulan</h3><!-- /.sec-title__title -->
             </div><!-- /.sec-title -->
-            <div class="row gutter-y-30">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="00ms">
-                    <div class="feature-one__item" style="--accent-color: #ffa415;">
-                        <div class="feature-one__item__shape"
-                            style="background-image: url({{ asset('user/assets') }}/images/shapes/feature-1-shape.png);">
+            <div class="row gutter-y-30 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="00ms">
+                    <div class="feature-one__item d-flex align-items-center" style="--accent-color: #ffa415;">
+                        <div class="feature-one__item__inner">
+                            <div class="feature-one__item__shape"
+                                style="background-image: url({{ asset('user/assets') }}/images/shapes/feature-1-shape.png);">
+                            </div>
+                            <div class="feature-one__item__icon"><span class="icon-zakat"></span></div>
+                            <h3 class="feature-one__item__title">Wakaf Pelosok Negeri</h3>
                         </div>
-                        <div class="feature-one__item__icon"><span class="icon-zakat"></span></div>
-                        <h3 class="feature-one__item__title">Wakaf Pelosok Negeri</h3>
                     </div><!-- feature-item -->
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="feature-one__item feature-one__item--reverse" style="--accent-color: #fc5528;">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                    <div class="feature-one__item d-flex align-items-center feature-one__item--reverse"
+                        style="--accent-color: #fc5528;">
                         <div class="feature-one__item__inner">
                             <div class="feature-one__item__shape"
                                 style="background-image: url({{ asset('user/assets') }}/images/shapes/feature-1-shape.png);">
@@ -357,8 +357,10 @@
                         </div>
                     </div><!-- feature-item -->
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                    <div class="feature-one__item" style="--accent-color: #8139e7;">
+            </div>
+            <div class="row gutter-y-30 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                    <div class="feature-one__item d-flex align-items-center" style="--accent-color: #8139e7;">
                         <div class="feature-one__item__inner">
                             <div class="feature-one__item__shape"
                                 style="background-image: url({{ asset('user/assets') }}/images/shapes/feature-1-shape.png);">
@@ -368,8 +370,8 @@
                         </div>
                     </div><!-- feature-item -->
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                    <div class="feature-one__item" style="--accent-color: #44c895;">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                    <div class="feature-one__item d-flex align-items-center" style="--accent-color: #44c895;">
                         <div class="feature-one__item__inner">
                             <div class="feature-one__item__shape"
                                 style="background-image: url({{ asset('user/assets') }}/images/shapes/feature-1-shape.png);">

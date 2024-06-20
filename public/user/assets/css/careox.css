@@ -14188,6 +14188,9 @@ body.megamenu-popup-active .mobile-nav__content {
     counter-increment: count;
     padding: 24px 30px 20px 119px;
     margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 767px) {

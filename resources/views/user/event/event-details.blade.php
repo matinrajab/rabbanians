@@ -24,15 +24,21 @@
                     <div class="team-details__image mb-20">
                         <img src="{{ asset('files') }}/event/{{ $event->image }}" alt="careox">
                     </div><!-- /.team-details__image -->
-                    <div class="sidebar__single">
-                        <h4 class="sidebar__title">Important Link</h4><!-- /.sidebar__title -->
-                        <ul class="sidebar__categories list-unstyled">
-                            <li><a href="{{ $event->guide_book_link }}">Guide Book</a></li>
-                            <li><a href="{{ $event->fully_funded_link }}">Fully Funded Registration</a></li>
-                            <li><a href="{{ $event->partial_funded_link }}">Partial Funded Registration</a></li>
-                            <li><a href="{{ $event->self_funded_link }}">Self Funded Registration</a></li>
-                        </ul><!-- /.sidebar__categories list-unstyled -->
-                    </div><!-- /.sidebar__single -->
+                    <div style="margin-bottom: 10px">
+                        <a href="{{ $event->guide_book_link }}" class="careox-btn pb-10"><span>Guide Book</span></a>
+                    </div>
+                    <div style="margin-bottom: 10px">
+                        <a href="{{ $event->fully_funded_link }}" class="careox-btn pb-10"><span>Fully Funded
+                                Registration</span></a>
+                    </div>
+                    <div style="margin-bottom: 10px">
+                        <a href="{{ $event->partial_funded_link }}" class="careox-btn pb-10"><span>Partial Funded
+                                Registration</span></a>
+                    </div>
+                    <div style="margin-bottom: 10px">
+                        <a href="{{ $event->self_funded_link }}" class="careox-btn pb-10"><span>Self Funded
+                                Registration</span></a>
+                    </div>
                 </div><!-- /.col-lg-6 -->
                 <div class="col-lg-7">
                     <div class="team-details__content">

@@ -111,8 +111,9 @@
                             <span></span>
                             <span></span>
                         </div><!-- /.mobile-nav__toggler -->
-                        <a href="{{ route('open-volunteers.index') }}" class="careox-btn"><span>Explore
-                                Now</span></a>
+                        <a href="{{ $header->cta_url }}" target="_blank" class="careox-btn"><span>
+                                {{ $header->cta_label }}
+                            </span></a>
                     </div><!-- /.main-header__right -->
                 </div><!-- /.main-header__inner -->
             </div><!-- /.container-fluid -->

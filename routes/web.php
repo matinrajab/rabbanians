@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\AdminContactController;
 use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Admin\AdminEventController;
 use App\Http\Controllers\Admin\AdminGalleryController;
+use App\Http\Controllers\Admin\AdminHeaderController;
 use App\Http\Controllers\Admin\AdminHomepageController;
 use App\Http\Controllers\Admin\AdminMissionController;
 use App\Http\Controllers\Admin\AdminOpenVolunteerController;
@@ -192,6 +193,12 @@ Route::middleware([
             Route::get('/', [AdminContactController::class, 'show'])->name('show');
             Route::get('edit', [AdminContactController::class, 'edit'])->name('edit');
             Route::put('update', [AdminContactController::class, 'update'])->name('update');
+        });
+
+        Route::name('header.')->prefix('header')->group(function () {
+            Route::get('/', [AdminHeaderController::class, 'show'])->name('show');
+            Route::get('edit', [AdminHeaderController::class, 'edit'])->name('edit');
+            Route::put('update', [AdminHeaderController::class, 'update'])->name('update');
         });
     });
 });
